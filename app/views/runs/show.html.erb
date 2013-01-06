@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @run.date %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%= @run.distance %>
+</p>
+
+<p>
+  <b>Hours:</b>
+  <%= @run.hours %>
+</p>
+
+<p>
+  <b>Minutes:</b>
+  <%= @run.minutes %>
+</p>
+
+<p>
+  <b>Seconds:</b>
+  <%= @run.seconds %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @run.notes %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @run.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_run_path(@run) %> |
+<%= link_to 'Back', runs_path %>

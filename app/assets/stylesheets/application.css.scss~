@@ -25,5 +25,5 @@
 }
 
 .btn {
-	color: red;
+	color: #ddd;
 }

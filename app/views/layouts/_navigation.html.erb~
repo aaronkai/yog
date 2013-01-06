@@ -1,5 +1,3 @@
-		
-<%= link_to (image_tag("logo.svg", :size => "30x30")) , root_path, :class => 'brand' %>
 
 				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -8,6 +6,8 @@
         <span class="icon-bar"></span>
       </a>
 		
+		
+<%= link_to (image_tag("logo.svg", :size => "30x30")) , root_path, :class => 'brand' %>
 
 		
 <div class="nav-collapse collapse">		

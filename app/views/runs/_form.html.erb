@@ -1,0 +1,17 @@
+<%= simple_form_for(@run) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :date %>
+    <%= f.input :distance %>
+    <%= f.input :hours %>
+    <%= f.input :minutes %>
+    <%= f.input :seconds %>
+    <%= f.input :notes %>
+    <%= f.hidden_field :user_id, :value => current_user.id%>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
