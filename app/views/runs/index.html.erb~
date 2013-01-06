@@ -1,12 +1,10 @@
-<h2><%= current_user.name%>'s runs</h2>
+<h2	><%= current_user.name%>'s runs</h2>
 
 <table class="table-striped table-bordered">
   <tr>
     <th>Date</th>
     <th>Distance</th>
-    <th>Hours</th>
-    <th>Minutes</th>
-    <th>Seconds</th>
+    <th>Time</th>
     <th>Notes</th>
     <!--<th></th>-->
     <th>Edit</th>
@@ -17,9 +15,7 @@
   <tr>
     <td><%= run.date %></td>
     <td><%= run.distance %></td>
-    <td><%= run.hours %></td>
-    <td><%= run.minutes %></td>
-    <td><%= run.seconds %></td>
+    <td><%= run.hours %>:<%= run.minutes %>:<%= run.seconds %></td>
     <td><%= run.notes %></td>
     <!--<td><%= link_to 'Show', run %></td>-->
     <td><%= link_to 'Edit', edit_run_path(run) %></td>
